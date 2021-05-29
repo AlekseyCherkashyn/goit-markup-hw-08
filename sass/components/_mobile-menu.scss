@@ -1,5 +1,6 @@
 .mobile-menu {
   position: fixed;
+  display: none;
   top: 0;
   left: 0;
   opacity: 0;
@@ -8,9 +9,12 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   background-color: var(--alt-title-cl);
+  transition: 0.5s;
+  z-index: 10;
 
   &.is-open {
     opacity: 1;
+    display: block;
   }
 }
 
@@ -75,13 +79,24 @@
   }
 }
 
+.menu-btn__icon:hover,
+.menu-btn__icon:focus {
+  fill: var(--accent-cl);
+}
+
+.is-open .menu-btn__icon {
+  z-index: 11;
+  position: fixed;
+  right: 15px;
+  top: 10px;
+}
+
 .is-open .menu-btn__icon-open {
   display: none;
 }
 
 .menu-btn__icon-close {
   display: none;
-  z-index: 2;
 
   .is-open & {
     display: block;

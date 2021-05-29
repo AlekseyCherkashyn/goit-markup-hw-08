@@ -1,8 +1,9 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   padding-top: 118px;
   padding-bottom: 118px;
   text-align: center;
+  background-size: cover;
 
   background-image: -webkit-gradient(
       linear,
@@ -100,6 +101,7 @@
   }
 
   @media screen and (min-width: 768px) {
+    max-width: 1600px;
     background-image: -webkit-gradient(
         linear,
         left top,
@@ -190,6 +192,10 @@
     }
   }
 }
+
+// @media screen and (max-width: 767px) .hero {
+//   margin-top: 60px;
+// }
 
 .hero__title {
   max-width: 360px;
