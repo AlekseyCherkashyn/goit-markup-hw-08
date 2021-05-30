@@ -11,7 +11,8 @@
     position: relative;
     color: var(--accent-cl);
   }
-  &--active-color::after {
+
+  &--underline::after {
     position: absolute;
     content: "";
     display: block;
