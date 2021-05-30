@@ -1,3 +1,15 @@
+.project__item {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
 .project__link {
   text-decoration: none;
   color: inherit;
@@ -18,6 +30,10 @@
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0;
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+  }
 }
 .project__name {
   padding-bottom: 4px;
